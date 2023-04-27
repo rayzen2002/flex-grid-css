@@ -1,102 +1,113 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>alohomora</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Projeto flexbox & grid</title>
 </head>
+
 <body>
-    <div class="container">
-        <header class="items-header">
-            <img src="./images/alohomora.png" alt="onebitcode" class="image-logo">
-            <div class="buttons">
-                <button class="button-header">Login</button>
-                <button class="button-header">Registro</button>
-                <button class="button-header">FAQ</button>
-            </div>
-        </header>
-        
-        <div class="section-header">
-            <h1>BEM VINDO A ALOHOMORASPORTS!</h1>
-            <p>Aqui é onde voce encontra todos os itens mais novos e modernos
-                do seu esporte preferido.
-            </p>
+  <div class="container">
+    <header class="header">
+      <img src="./imagens/alohomora.png" alt="logo-header" class="logoNavBar">
+      <div class="headerBtnGroup">
+        <button class="navBtn">Login</button>
+        <button class="navBtn">Registro</button>
+        <button class="navBtn">FAQ</button>
+      </div>
+    </header>
+    <p class="sectionTitle" id="backToTop">BEM VINDO A ALOHOMORASPORTS!</p>
+    <p class="sectionDescription">Aqui é onde você encontra todos os itens mais novos e modernos do seu esporte
+      preferido.</p>
+    <section class="gridContainer">
+      <div class="mainContent">
+        <div class="categoryCard">
+          <img src="./imagens/boxe.jpg" alt="mainCardImg" class="mainCardImg">
+          <p class="mainCategoryCardTitle">BOXE</p>
+          <p class="mainCategoryCardDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+            reprehenderit hic blanditiis quam voluptates dolorum, adipisci dignissimos id ea temporibus.</p>
         </div>
-        <section class="items-main">
-            
-        
-            <div class="items item1">
-                <img src="./images/boxe.jpg" alt="boxe" class="images">
-                <p>BOXE</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, accusamus impedit. Inventore consequuntur atque ratione!</p>
-            </div>
-            <div class="items item2">
-                <img src="./images/crossfit.jpg" alt="crossfit" class="images">
-                <p>CROSSFIT</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, accusamus impedit. Inventore consequuntur atque ratione!</p>
-            </div>
-            <div class="items item3">
-                <img src="./images/natacao.jpg" alt="natacao" class="images">
-                <p>NATACAO</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, accusamus impedit. Inventore consequuntur atque ratione!</p>
-            </div>
-            <div class="items item4">
-                <img src="./images/roupas.jpg" alt="roupas" class="images">
-                <p>ROUPAS</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, accusamus impedit. Inventore consequuntur atque ratione!</p>
-            </div>
-            <div class="items item5">
-                <img src="./images/basquete.jpg" alt="basquete" class="images">
-                <p>BASQUETE</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, accusamus impedit. Inventore consequuntur atque ratione!</p>
-            </div>
-            <div class="items item6">
-                <img src="./images/corrida.jpg" alt="corrida" class="images">
-                <p>CORRIDA</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, accusamus impedit. Inventore consequuntur atque ratione!</p>
-            </div>
-            <div class="items item7">
-                <img src="./images/surf.jpg" alt="surf" class="images">
-                <p>SURF</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, accusamus impedit. Inventore consequuntur atque ratione!</p>
-            </div>
-            <div class="items item8">
-                <img src="./images/trilha.jpg" alt="trilha" class="images">
-                <p>TRILHA</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, accusamus impedit. Inventore consequuntur atque ratione!</p>
-            </div>
-            <div class="items item9">
-                <img src="./images/tenis.jpg" alt="tenis" class="images">
-                <p>TENIS</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, accusamus impedit. Inventore consequuntur atque ratione!</p>
-            </div>
-            <div class="items item10">
-                <p>CATEGORIAS EXTRAS</p>
-                <img src="./images/bicicletas.jpg" alt="bicicletas" class="images-right">
-                <p>BICICLETAS</p>
-                <img src="./images/esportesNaNeve.jpg" alt="esportesNaNeve" class="images-right">
-                <p>ESPORTES DE FRIO</p>
-                <img src="./images/skate.jpg" alt="skate" class="images-right">
-                <p>SKATE</p>
-                <img src="./images/futebolAmericano.jpg" alt="futebolAmericano" class="images-right">
-                <p>FUTEBOL AMERICANO</p>
-                <img src="./images/yoga.jpg" alt="yoga" class="images-right">
-                <P>YOGA</P>
-                
-            </div>
-        </section>
-        <footer class="items-footer"> 
-            <img src="./images/alohomora.png" alt="onebitcode" class="image-logo-footer">
-            <!-- <img src="./images/iconrock-red.svg" alt="onebitcode"  class="image-icon"> -->
-            
-                
-                <a href="#">
-                    <button class="button-footer" >VOLTAR PARA O TOPO</button>
-                </a>
-            
-        </footer>
-</div>
+        <div class="categoryCard">
+          <img src="./imagens/crossfit.jpg" alt="mainCardImg" class="mainCardImg">
+          <p class="mainCategoryCardTitle">CROSSFIT</p>
+          <p class="mainCategoryCardDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+            reprehenderit hic blanditiis quam voluptates dolorum, adipisci dignissimos id ea temporibus.</p>
+        </div>
+        <div class="categoryCard">
+          <img src="./imagens/natacao.jpg" alt="mainCardImg" class="mainCardImg">
+          <p class="mainCategoryCardTitle">NATAÇÃO</p>
+          <p class="mainCategoryCardDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+            reprehenderit hic blanditiis quam voluptates dolorum, adipisci dignissimos id ea temporibus.</p>
+        </div>
+        <div class="categoryCard">
+          <img src="./imagens/roupas.jpg" alt="mainCardImg" class="mainCardImg">
+          <p class="mainCategoryCardTitle">ROUPAS</p>
+          <p class="mainCategoryCardDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+            reprehenderit hic blanditiis quam voluptates dolorum, adipisci dignissimos id ea temporibus.</p>
+        </div>
+        <div class="categoryCard">
+          <img src="./imagens/basquete.jpg" alt="mainCardImg" class="mainCardImg">
+          <p class="mainCategoryCardTitle">BASQUETE</p>
+          <p class="mainCategoryCardDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+            reprehenderit hic blanditiis quam voluptates dolorum, adipisci dignissimos id ea temporibus.</p>
+        </div>
+        <div class="categoryCard">
+          <img src="./imagens/corrida.jpg" alt="mainCardImg" class="mainCardImg">
+          <p class="mainCategoryCardTitle">CORRIDA</p>
+          <p class="mainCategoryCardDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+            reprehenderit hic blanditiis quam voluptates dolorum, adipisci dignissimos id ea temporibus.</p>
+        </div>
+        <div class="categoryCard">
+          <img src="./imagens/surf.jpg" alt="mainCardImg" class="mainCardImg">
+          <p class="mainCategoryCardTitle">SURF</p>
+          <p class="mainCategoryCardDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+            reprehenderit hic blanditiis quam voluptates dolorum, adipisci dignissimos id ea temporibus.</p>
+        </div>
+        <div class="categoryCard">
+          <img src="./imagens/trilha.jpg" alt="mainCardImg" class="mainCardImg">
+          <p class="mainCategoryCardTitle">TRILHA</p>
+          <p class="mainCategoryCardDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+            reprehenderit hic blanditiis quam voluptates dolorum, adipisci dignissimos id ea temporibus.</p>
+        </div>
+        <div class="categoryCard">
+          <img src="./imagens/tenis.jpg" alt="mainCardImg" class="mainCardImg">
+          <p class="mainCategoryCardTitle">TÊNIS</p>
+          <p class="mainCategoryCardDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+            reprehenderit hic blanditiis quam voluptates dolorum, adipisci dignissimos id ea temporibus.</p>
+        </div>
+      </div>
+      <div class="sidebarContent">
+        <p>CATEGORIAS EXTRAS</p>
+        <div class="sidebarCard">
+          <img src="./imagens/bicicletas.jpg" alt="sidebarCardImg" class="sidebarCardImg">
+          <p class="sidebarCardTitle">BICICLETAS</p>
+        </div>
+        <div class="sidebarCard">
+          <img src="./imagens/esportesNaNeve.jpg" alt="sidebarCardImg" class="sidebarCardImg">
+          <p class="sidebarCardTitle">ESPORTES DE FRIO</p>
+        </div>
+        <div class="sidebarCard">
+          <img src="./imagens/futebolAmericano.jpg" alt="sidebarCardImg" class="sidebarCardImg">
+          <p class="sidebarCardTitle">FUTEBOL AMERICANO</p>
+        </div>
+        <div class="sidebarCard">
+          <img src="./imagens/skate.jpg" alt="sidebarCardImg" class="sidebarCardImg">
+          <p class="sidebarCardTitle">SKATE</p>
+        </div>
+        <div class="sidebarCard">
+          <img src="./imagens/yoga.jpg" alt="sidebarCardImg" class="sidebarCardImg">
+          <p class="sidebarCardTitle">YOGA</p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <img src="./imagens/alohomora.png" alt="logo-footer" class="logoFooter">
+      <a href="#backToTop" class="footerAnchor">VOLTAR PARA O TOPO</a>
+    </footer>
+  </div>
 </body>
+
 </html>
